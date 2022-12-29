@@ -134,6 +134,7 @@ namespace guess_word_game
             guess4_letter_list = new RichTextBox[] { guess4_0, guess4_1, guess4_2, guess4_3, guess4_4 };
             guess5_letter_list = new RichTextBox[] { guess5_0, guess5_1, guess5_2, guess5_3, guess5_4 };
             guess6_letter_list = new RichTextBox[] { guess6_0, guess6_1, guess6_2, guess6_3, guess6_4 };
+            alphabet = new Label[] { alphaA, alphaB, alphaC, alphaD,alphaE,alphaF,alphaG,alphaH,alphaI,alphaJ,alphaK, alphaL, alphaM, alphaN, alphaO, alphaP, alphaQ, alphaR, alphaS,alphaT, alphaU, alphaV, alphaW, alphaX, alphaY, alphaZ };
         }
 
         public int Check_Guess(int guess_count, RichTextBox[] guess_letters, RichTextBox[] guess_letters_next, string guess)
@@ -164,14 +165,35 @@ namespace guess_word_game
                     if (guess[i] == secret_word[i])
                     {
                         guess_letters[i].BackColor = Color.ForestGreen;
+                        foreach (Label letter in alphabet)
+                        {
+                            if (guess_letters[i].Text == letter.Text)
+                            {
+                                letter.BackColor = Color.ForestGreen;
+                            }
+                        }
                     }
                     else if (secret_word.Contains(guess[i]))
                     {
                         guess_letters[i].BackColor = Color.Orange;
+                        foreach (Label letter in alphabet)
+                        {
+                            if (guess_letters[i].Text == letter.Text)
+                            {
+                                letter.BackColor = Color.Orange;
+                            }
+                        }
                     }
                     else
                     {
                         guess_letters[i].BackColor = Color.Gray;
+                        foreach (Label letter in alphabet)
+                        {
+                            if (guess_letters[i].Text == letter.Text)
+                            {
+                                letter.BackColor = Color.Gray;
+                            }
+                        }
                     }
                     guess_letters[i].ReadOnly = true;
                     guess_letters[i].SelectionLength = 0;
@@ -179,17 +201,40 @@ namespace guess_word_game
                     guess_letters_next[i].SelectionLength = 1;
                 }
                 guess_count++;
+                if (guess_count == 6)
+                {
+                    DialogResult result = MessageBox.Show($"Out of guesses! The word was {secret_word}. Play again?", ":(:(:(:(:(:(:(:(:(:(", MessageBoxButtons.YesNo);
+                    if (result == DialogResult.Yes)
+                    {
+                        Application.Restart();
+                    }
+                    else if (result == DialogResult.No)
+                    {
+                        Close();
+                    }
+                }
                 return guess_count;
             }
         }
         private void Guess_KeyPress(object sender, KeyPressEventArgs e)
         {
+            //Blank input if it is a number
+            if (!(Char.IsLetter(e.KeyChar)))
+            {
+                e.KeyChar = '\0';
+            }
+
+            //Convert all inputs to uppercase
             e.KeyChar = Char.ToUpper(e.KeyChar);
+
+            //Autotab between input fields
+            /*
             RichTextBox TB = (RichTextBox)sender;
             if (TB.Text.Length == 0)
             {
                 this.SelectNextControl((Control)sender, true, true, true, true);
             }
+            */
         }
         private void button1_Click(object sender, EventArgs e)
         {
@@ -263,18 +308,6 @@ namespace guess_word_game
                 else
                 {
                     guess_count = Check_Guess(guess_count, guess6_letter_list, guess6_letter_list, guess_string);
-                }
-            }
-            else
-            {
-                DialogResult result = MessageBox.Show("Out of guesses! Play again?", ":(:(:(:(:(:(:(:(:(:(", MessageBoxButtons.YesNo);
-                if (result == DialogResult.Yes)
-                {
-                    Application.Restart();
-                }
-                else if (result == DialogResult.No)
-                {
-                    Close();
                 }
             }
         }

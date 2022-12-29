@@ -15,12 +15,12 @@ namespace guess_word_game
         /// </summary>
         private System.ComponentModel.IContainer components = null;
 
-        private static string[] words_array = { "Abuse", "Adult", "Agent", "Anger", "Apple", "Award", "Basis", "Beach", "Birth", "Block", "Blood", "Board", "Brain", "Bread", "Break", "Brown", "Buyer", "Cause", "Chain", "Chair", "Chest", "Chief", "Child", "China", "Claim", "Class", "Clock", "Coach", "Coast", "Court", "Cover", "Cream", "Crime", "Cross", "Crowd", "Crown", "Cycle", "Dance", "Death", "Depth", "Doubt", "Draft", "Drama", "Dream", "Dress", "Drink", "Drive", "Earth", "Enemy", "Entry", "Error", "Event", "Faith", "Fault", "Field", "Fight", "Final", "Floor", "Focus", "Force", "Frame", "Frank", "Front", "Fruit", "Glass", "Grant", "Grass", "Green", "Group", "Guide", "Heart", "Henry", "Horse", "Hotel", "House", "Image", "Index", "Input", "Issue", "Japan", "Jones", "Judge", "Knife", "Laura", "Layer", "Level", "Lewis", "Light", "Limit", "Lunch", "Major", "March", "Match", "Metal", "Model", "Money", "Month", "Motor", "Mouth", "Music", "Night", "Noise", "North", "Novel", "Nurse", "Offer", "Order", "Other", "Owner", "Panel", "Paper", "Party", "Peace", "Peter", "Phase", "Phone", "Piece", "Pilot", "Pitch", "Place", "Plane", "Plant", "Plate", "Point", "Pound", "Power", "Press", "Price", "Pride", "Prize", "Proof", "Queen", "Radio", "Range", "Ratio", "Reply", "Right", "River", "Round", "Route", "Rugby", "Scale", "Scene", "Scope", "Score", "Sense", "Shape", "Share", "Sheep", "Sheet", "Shift", "Shirt", "Shock", "Sight", "Simon", "Skill", "Sleep", "Smile", "Smith", "Smoke", "Sound", "South", "Space", "Speed", "Spite", "Sport", "Squad", "Staff", "Stage", "Start", "State", "Steam", "Steel", "Stock", "Stone", "Store", "Study", "Stuff", "Style", "Sugar", "Table", "Taste", "Terry", "Theme", "Thing", "Title", "Total", "Touch", "Tower", "Track", "Trade", "Train", "Trend", "Trial", "Trust", "Truth", "Uncle", "Union", "Unity", "Value", "Video", "Visit", "Voice", "Waste", "Watch", "Water", "While", "White", "Whole", "Woman", "World", "Youth", "", "There", "Where", "Which", "Whose", "Admit", "Adopt", "Agree", "Allow", "Alter", "Apply", "Argue", "Arise", "Avoid", "Begin", "Blame", "Break", "Bring", "Build", "Burst", "Carry", "Catch", "Cause", "Check", "Claim", "Clean", "Clear", "Climb", "Close", "Count", "Cover", "Cross", "Dance", "Doubt", "Drink", "Drive", "Enjoy", "Enter", "Exist", "Fight", "Focus", "Force", "Guess", "Imply", "Issue", "Judge", "Laugh", "Learn", "Leave", "Limit", "Marry", "Match", "Occur", "Offer", "Order", "Phone", "Place", "Point", "Press", "Prove", "Raise", "Reach", "Refer", "Relax", "Serve", "Shall", "Share", "Shift", "Shoot", "Sleep", "Solve", "Sound", "Speak", "Spend", "Split", "Stand", "Start", "State", "Stick", "Study", "Teach", "Thank", "Think", "Throw", "Touch", "Train", "Treat", "Trust", "Visit", "Voice", "Waste", "Watch", "Worry", "Would", "Write", "Above", "Acute", "Alive", "Alone", "Angry", "Aware", "Awful", "Basic", "Black", "Blind", "Brave", "Brief", "Broad", "Brown", "Cheap", "Chief", "Civil", "Clean", "Clear", "Close", "Crazy", "Daily", "Dirty", "Early", "Empty", "Equal", "Exact", "Extra", "Faint", "False", "Fifth", "Final", "First", "Fresh", "Front", "Funny", "Giant", "Grand", "Great", "Green", "Gross", "Happy", "Harsh", "Heavy", "Human", "Ideal", "Inner", "Joint", "Large", "Legal", "Level", "Light", "Local", "Loose", "Lucky", "Magic", "Major", "Minor", "Moral", "Naked", "Nasty", "Naval", "Other", "Outer", "Plain", "Prime", "Prior", "Proud", "Quick", "Quiet", "Rapid", "Ready", "Right", "Roman", "Rough", "Round", "Royal", "Rural", "Sharp", "Sheer", "Short", "Silly", "Sixth", "Small", "Smart", "Solid", "Sorry", "Spare", "Steep", "Still", "Super", "Sweet", "Thick", "Third", "Tight", "Total", "Tough", "Upper", "Upset", "Urban", "Usual", "Vague", "Valid", "Vital", "White", "Whole", "Wrong", "Young", "Afore", "After", "Bothe", "Other", "Since", "Slash", "Until", "Where", "While", "Aback", "Abaft", "Aboon", "About", "Above", "Accel", "Adown", "Afoot", "Afore", "Afoul", "After", "Again", "Agape", "Agogo", "Agone", "Ahead", "Ahull", "Alife", "Alike", "Aline", "Aloft", "Alone", "Along", "Aloof", "Aloud", "Amiss", "Amply", "Amuck", "Apace", "Apart", "Aptly", "Arear", "Aside", "Askew", "Awful", "Badly", "Bally", "Below", "Canny", "Cheap", "Clean", "Clear", "Coyly", "Daily", "Dimly", "Dirty", "Ditto", "Drily", "Dryly", "Dully", "Early", "Extra", "False", "Fatly", "Feyly", "First", "Fitly", "Forte", "Forth", "Fresh", "Fully", "Funny", "Gaily", "Gayly", "Godly", "Great", "Haply", "Heavy", "Hella", "Hence", "Hotly", "Icily", "Infra", "Intl.", "Jildi", "Jolly", "Laxly", "Lento", "Light", "Lowly", "Madly", "Maybe", "Never", "Newly", "Nobly", "Oddly", "Often", "Other", "Ought", "Party", "Piano", "Plain", "Plonk", "Plumb", "Prior", "Queer", "Quick", "Quite", "Ramen", "Rapid", "Redly", "Right", "Rough", "Round", "Sadly", "Secus", "Selly", "Sharp", "Sheer", "Shily", "Short", };
+        private static string[] words_array = { "ABACK", "ABAFT", "ABOON", "ABOUT", "ABOVE", "ABOVE", "ABUSE", "ACCEL", "ACUTE", "ADMIT", "ADOPT", "ADOWN", "ADULT", "AFOOT", "AFORE", "AFORE", "AFOUL", "AFTER", "AFTER", "AGAIN", "AGAPE", "AGENT", "AGOGO", "AGONE", "AGREE", "AHEAD", "AHULL", "ALIFE", "ALIKE", "ALINE", "ALIVE", "ALLOW", "ALOFT", "ALONE", "ALONE", "ALONG", "ALOOF", "ALOUD", "ALTER", "AMISS", "AMPLY", "AMUCK", "ANGER", "ANGRY", "APACE", "APART", "APPLE", "APPLY", "APTLY", "AREAR", "ARGUE", "ARISE", "ASIDE", "ASKEW", "AVOID", "AWARD", "AWARE", "AWFUL", "AWFUL", "BADLY", "BALLY", "BASIC", "BASIS", "BEACH", "BEGIN", "BELOW", "BIRTH", "BLACK", "BLAME", "BLIND", "BLOCK", "BLOOD", "BOARD", "BOTHE", "BRAIN", "BRAVE", "BREAD", "BREAK", "BREAK", "BRIEF", "BRING", "BROAD", "BROWN", "BROWN", "BUILD", "BURST", "BUYER", "CANNY", "CARRY", "CATCH", "CAUSE", "CAUSE", "CHAIN", "CHAIR", "CHEAP", "CHEAP", "CHECK", "CHEST", "CHIEF", "CHIEF", "CHILD", "CHINA", "CIVIL", "CLAIM", "CLAIM", "CLASS", "CLEAN", "CLEAN", "CLEAN", "CLEAR", "CLEAR", "CLEAR", "CLIMB", "CLOCK", "CLOSE", "CLOSE", "COACH", "COAST", "COUNT", "COURT", "COVER", "COVER", "COYLY", "CRAZY", "CREAM", "CRIME", "CROSS", "CROSS", "CROWD", "CROWN", "CYCLE", "DAILY", "DAILY", "DANCE", "DANCE", "DEATH", "DEPTH", "DIMLY", "DIRTY", "DIRTY", "DITTO", "DOUBT", "DOUBT", "DRAFT", "DRAMA", "DREAM", "DRESS", "DRILY", "DRINK", "DRINK", "DRIVE", "DRIVE", "DRYLY", "DULLY", "EARLY", "EARLY", "EARTH", "EMPTY", "ENEMY", "ENJOY", "ENTER", "ENTRY", "EQUAL", "ERROR", "EVENT", "EXACT", "EXIST", "EXTRA", "EXTRA", "FAINT", "FAITH", "FALSE", "FALSE", "FATLY", "FAULT", "FEYLY", "FIELD", "FIFTH", "FIGHT", "FIGHT", "FINAL", "FINAL", "FIRST", "FIRST", "FITLY", "FLOOR", "FOCUS", "FOCUS", "FORCE", "FORCE", "FORTE", "FORTH", "FRAME", "FRANK", "FRESH", "FRESH", "FRONT", "FRONT", "FRUIT", "FULLY", "FUNNY", "FUNNY", "GAILY", "GAYLY", "GIANT", "GLASS", "GODLY", "GRAND", "GRANT", "GRASS", "GREAT", "GREAT", "GREEN", "GREEN", "GROSS", "GROUP", "GUESS", "GUIDE", "HAPLY", "HAPPY", "HARSH", "HEART", "HEAVY", "HEAVY", "HELLA", "HENCE", "HENRY", "HORSE", "HOTEL", "HOTLY", "HOUSE", "HUMAN", "ICILY", "IDEAL", "IMAGE", "IMPLY", "INDEX", "INFRA", "INNER", "INPUT", "INTL.", "ISSUE", "ISSUE", "JAPAN", "JILDI", "JOINT", "JOLLY", "JONES", "JUDGE", "JUDGE", "KNIFE", "LARGE", "LAUGH", "LAURA", "LAXLY", "LAYER", "LEARN", "LEAVE", "LEGAL", "LENTO", "LEVEL", "LEVEL", "LEWIS", "LIGHT", "LIGHT", "LIGHT", "LIMIT", "LIMIT", "LOCAL", "LOOSE", "LOWLY", "LUCKY", "LUNCH", "MADLY", "MAGIC", "MAJOR", "MAJOR", "MARCH", "MARRY", "MATCH", "MATCH", "MAYBE", "METAL", "MINOR", "MODEL", "MONEY", "MONTH", "MORAL", "MOTOR", "MOUTH", "MUSIC", "NAKED", "NASTY", "NAVAL", "NEVER", "NEWLY", "NIGHT", "NOBLY", "NOISE", "NORTH", "NOVEL", "NURSE", "OCCUR", "ODDLY", "OFFER", "OFFER", "OFTEN", "ORDER", "ORDER", "OTHER", "OTHER", "OTHER", "OTHER", "OUGHT", "OUTER", "OWNER", "PANEL", "PAPER", "PARTY", "PARTY", "PEACE", "PETER", "PHASE", "PHONE", "PHONE", "PIANO", "PIECE", "PILOT", "PITCH", "PLACE", "PLACE", "PLAIN", "PLAIN", "PLANE", "PLANT", "PLATE", "PLONK", "PLUMB", "POINT", "POINT", "POUND", "POWER", "PRESS", "PRESS", "PRICE", "PRIDE", "PRIME", "PRIOR", "PRIOR", "PRIZE", "PROOF", "PROUD", "PROVE", "QUEEN", "QUEER", "QUICK", "QUICK", "QUIET", "QUITE", "RADIO", "RAISE", "RAMEN", "RANGE", "RAPID", "RAPID", "RATIO", "REACH", "READY", "REDLY", "REFER", "RELAX", "REPLY", "RIGHT", "RIGHT", "RIGHT", "RIVER", "ROMAN", "ROUGH", "ROUGH", "ROUND", "ROUND", "ROUND", "ROUTE", "ROYAL", "RUGBY", "RURAL", "SADLY", "SCALE", "SCENE", "SCOPE", "SCORE", "SECUS", "SELLY", "SENSE", "SERVE", "SHALL", "SHAPE", "SHARE", "SHARE", "SHARP", "SHARP", "SHEEP", "SHEER", "SHEER", "SHEET", "SHIFT", "SHIFT", "SHILY", "SHIRT", "SHOCK", "SHOOT", "SHORT", "SHORT", "SIGHT", "SILLY", "SIMON", "SINCE", "SIXTH", "SKILL", "SLASH", "SLEEP", "SLEEP", "SMALL", "SMART", "SMILE", "SMITH", "SMOKE", "SOLID", "SOLVE", "SORRY", "SOUND", "SOUND", "SOUTH", "SPACE", "SPARE", "SPEAK", "SPEED", "SPEND", "SPITE", "SPLIT", "SPORT", "SQUAD", "STAFF", "STAGE", "STAND", "START", "START", "STATE", "STATE", "STEAM", "STEEL", "STEEP", "STICK", "STILL", "STOCK", "STONE", "STORE", "STUDY", "STUDY", "STUFF", "STYLE", "SUGAR", "SUPER", "SWEET", "TABLE", "TASTE", "TEACH", "TERRY", "THANK", "THEME", "THERE", "THICK", "THING", "THINK", "THIRD", "THROW", "TIGHT", "TITLE", "TOTAL", "TOTAL", "TOUCH", "TOUCH", "TOUGH", "TOWER", "TRACK", "TRADE", "TRAIN", "TRAIN", "TREAT", "TREND", "TRIAL", "TRUST", "TRUST", "TRUTH", "UNCLE", "UNION", "UNITY", "UNTIL", "UPPER", "UPSET", "URBAN", "USUAL", "VAGUE", "VALID", "VALUE", "VIDEO", "VISIT", "VISIT", "VITAL", "VOICE", "VOICE", "WASTE", "WASTE", "WATCH", "WATCH", "WATER", "WHERE", "WHERE", "WHICH", "WHILE", "WHILE", "WHITE", "WHITE", "WHOLE", "WHOLE", "WHOSE", "WOMAN", "WORLD", "WORRY", "WOULD", "WRITE", "WRONG", "YOUNG", "YOUTH" };
         private static List<string> words_list = new List<string>(words_array);
         private static Random rnd = new Random();
         private static int r = rnd.Next(words_list.Count);
-        //private static string word = words_list[r];
-        private string secret_word = "GUESS";
+        private static string secret_word = words_list[r];
+        //private string secret_word = "GUESS";
         /// <summary>
         /// Clean up any resources being used.
         /// </summary>
@@ -42,6 +42,7 @@ namespace guess_word_game
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Form1));
             this.guess1_0 = new System.Windows.Forms.RichTextBox();
             this.guess1_1 = new System.Windows.Forms.RichTextBox();
             this.guess1_2 = new System.Windows.Forms.RichTextBox();
@@ -107,7 +108,7 @@ namespace guess_word_game
             this.guess1_0.DetectUrls = false;
             this.guess1_0.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess1_0.Location = new System.Drawing.Point(14, 12);
-            this.guess1_0.MaxLength = 0;
+            this.guess1_0.MaxLength = 1;
             this.guess1_0.Multiline = false;
             this.guess1_0.Name = "guess1_0";
             this.guess1_0.Size = new System.Drawing.Size(81, 79);
@@ -121,7 +122,7 @@ namespace guess_word_game
             this.guess1_1.DetectUrls = false;
             this.guess1_1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess1_1.Location = new System.Drawing.Point(101, 12);
-            this.guess1_1.MaxLength = 0;
+            this.guess1_1.MaxLength = 1;
             this.guess1_1.Name = "guess1_1";
             this.guess1_1.Size = new System.Drawing.Size(81, 79);
             this.guess1_1.TabIndex = 1;
@@ -134,7 +135,7 @@ namespace guess_word_game
             this.guess1_2.DetectUrls = false;
             this.guess1_2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess1_2.Location = new System.Drawing.Point(188, 12);
-            this.guess1_2.MaxLength = 0;
+            this.guess1_2.MaxLength = 1;
             this.guess1_2.Name = "guess1_2";
             this.guess1_2.Size = new System.Drawing.Size(81, 79);
             this.guess1_2.TabIndex = 2;
@@ -147,7 +148,7 @@ namespace guess_word_game
             this.guess1_3.DetectUrls = false;
             this.guess1_3.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess1_3.Location = new System.Drawing.Point(275, 12);
-            this.guess1_3.MaxLength = 0;
+            this.guess1_3.MaxLength = 1;
             this.guess1_3.Name = "guess1_3";
             this.guess1_3.Size = new System.Drawing.Size(81, 79);
             this.guess1_3.TabIndex = 3;
@@ -160,7 +161,7 @@ namespace guess_word_game
             this.guess1_4.DetectUrls = false;
             this.guess1_4.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess1_4.Location = new System.Drawing.Point(362, 12);
-            this.guess1_4.MaxLength = 0;
+            this.guess1_4.MaxLength = 1;
             this.guess1_4.Name = "guess1_4";
             this.guess1_4.Size = new System.Drawing.Size(81, 79);
             this.guess1_4.TabIndex = 4;
@@ -173,7 +174,7 @@ namespace guess_word_game
             this.guess2_4.DetectUrls = false;
             this.guess2_4.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess2_4.Location = new System.Drawing.Point(362, 96);
-            this.guess2_4.MaxLength = 0;
+            this.guess2_4.MaxLength = 1;
             this.guess2_4.Name = "guess2_4";
             this.guess2_4.Size = new System.Drawing.Size(81, 83);
             this.guess2_4.TabIndex = 9;
@@ -186,7 +187,7 @@ namespace guess_word_game
             this.guess2_3.DetectUrls = false;
             this.guess2_3.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess2_3.Location = new System.Drawing.Point(275, 96);
-            this.guess2_3.MaxLength = 0;
+            this.guess2_3.MaxLength = 1;
             this.guess2_3.Name = "guess2_3";
             this.guess2_3.Size = new System.Drawing.Size(81, 83);
             this.guess2_3.TabIndex = 8;
@@ -199,7 +200,7 @@ namespace guess_word_game
             this.guess2_2.DetectUrls = false;
             this.guess2_2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess2_2.Location = new System.Drawing.Point(188, 96);
-            this.guess2_2.MaxLength = 0;
+            this.guess2_2.MaxLength = 1;
             this.guess2_2.Name = "guess2_2";
             this.guess2_2.Size = new System.Drawing.Size(81, 83);
             this.guess2_2.TabIndex = 7;
@@ -212,7 +213,7 @@ namespace guess_word_game
             this.guess2_1.DetectUrls = false;
             this.guess2_1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess2_1.Location = new System.Drawing.Point(101, 96);
-            this.guess2_1.MaxLength = 0;
+            this.guess2_1.MaxLength = 1;
             this.guess2_1.Name = "guess2_1";
             this.guess2_1.Size = new System.Drawing.Size(81, 83);
             this.guess2_1.TabIndex = 6;
@@ -225,7 +226,7 @@ namespace guess_word_game
             this.guess2_0.DetectUrls = false;
             this.guess2_0.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess2_0.Location = new System.Drawing.Point(14, 96);
-            this.guess2_0.MaxLength = 0;
+            this.guess2_0.MaxLength = 1;
             this.guess2_0.Name = "guess2_0";
             this.guess2_0.Size = new System.Drawing.Size(81, 83);
             this.guess2_0.TabIndex = 5;
@@ -238,7 +239,7 @@ namespace guess_word_game
             this.guess3_4.DetectUrls = false;
             this.guess3_4.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess3_4.Location = new System.Drawing.Point(362, 181);
-            this.guess3_4.MaxLength = 0;
+            this.guess3_4.MaxLength = 1;
             this.guess3_4.Name = "guess3_4";
             this.guess3_4.Size = new System.Drawing.Size(81, 83);
             this.guess3_4.TabIndex = 14;
@@ -251,7 +252,7 @@ namespace guess_word_game
             this.guess3_3.DetectUrls = false;
             this.guess3_3.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess3_3.Location = new System.Drawing.Point(275, 181);
-            this.guess3_3.MaxLength = 0;
+            this.guess3_3.MaxLength = 1;
             this.guess3_3.Name = "guess3_3";
             this.guess3_3.Size = new System.Drawing.Size(81, 83);
             this.guess3_3.TabIndex = 13;
@@ -264,7 +265,7 @@ namespace guess_word_game
             this.guess3_2.DetectUrls = false;
             this.guess3_2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess3_2.Location = new System.Drawing.Point(188, 181);
-            this.guess3_2.MaxLength = 0;
+            this.guess3_2.MaxLength = 1;
             this.guess3_2.Name = "guess3_2";
             this.guess3_2.Size = new System.Drawing.Size(81, 83);
             this.guess3_2.TabIndex = 12;
@@ -277,7 +278,7 @@ namespace guess_word_game
             this.guess3_1.DetectUrls = false;
             this.guess3_1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess3_1.Location = new System.Drawing.Point(101, 181);
-            this.guess3_1.MaxLength = 0;
+            this.guess3_1.MaxLength = 1;
             this.guess3_1.Name = "guess3_1";
             this.guess3_1.Size = new System.Drawing.Size(81, 83);
             this.guess3_1.TabIndex = 11;
@@ -290,7 +291,7 @@ namespace guess_word_game
             this.guess3_0.DetectUrls = false;
             this.guess3_0.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess3_0.Location = new System.Drawing.Point(14, 181);
-            this.guess3_0.MaxLength = 0;
+            this.guess3_0.MaxLength = 1;
             this.guess3_0.Name = "guess3_0";
             this.guess3_0.Size = new System.Drawing.Size(81, 83);
             this.guess3_0.TabIndex = 10;
@@ -303,7 +304,7 @@ namespace guess_word_game
             this.guess4_4.DetectUrls = false;
             this.guess4_4.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess4_4.Location = new System.Drawing.Point(362, 266);
-            this.guess4_4.MaxLength = 0;
+            this.guess4_4.MaxLength = 1;
             this.guess4_4.Name = "guess4_4";
             this.guess4_4.Size = new System.Drawing.Size(81, 83);
             this.guess4_4.TabIndex = 19;
@@ -316,7 +317,7 @@ namespace guess_word_game
             this.guess4_3.DetectUrls = false;
             this.guess4_3.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess4_3.Location = new System.Drawing.Point(275, 266);
-            this.guess4_3.MaxLength = 0;
+            this.guess4_3.MaxLength = 1;
             this.guess4_3.Name = "guess4_3";
             this.guess4_3.Size = new System.Drawing.Size(81, 83);
             this.guess4_3.TabIndex = 18;
@@ -329,7 +330,7 @@ namespace guess_word_game
             this.guess4_2.DetectUrls = false;
             this.guess4_2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess4_2.Location = new System.Drawing.Point(188, 266);
-            this.guess4_2.MaxLength = 0;
+            this.guess4_2.MaxLength = 1;
             this.guess4_2.Name = "guess4_2";
             this.guess4_2.Size = new System.Drawing.Size(81, 83);
             this.guess4_2.TabIndex = 17;
@@ -342,7 +343,7 @@ namespace guess_word_game
             this.guess4_1.DetectUrls = false;
             this.guess4_1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess4_1.Location = new System.Drawing.Point(101, 266);
-            this.guess4_1.MaxLength = 0;
+            this.guess4_1.MaxLength = 1;
             this.guess4_1.Name = "guess4_1";
             this.guess4_1.Size = new System.Drawing.Size(81, 83);
             this.guess4_1.TabIndex = 16;
@@ -355,7 +356,7 @@ namespace guess_word_game
             this.guess4_0.DetectUrls = false;
             this.guess4_0.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess4_0.Location = new System.Drawing.Point(14, 266);
-            this.guess4_0.MaxLength = 0;
+            this.guess4_0.MaxLength = 1;
             this.guess4_0.Name = "guess4_0";
             this.guess4_0.Size = new System.Drawing.Size(81, 83);
             this.guess4_0.TabIndex = 15;
@@ -368,7 +369,7 @@ namespace guess_word_game
             this.guess5_4.DetectUrls = false;
             this.guess5_4.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess5_4.Location = new System.Drawing.Point(362, 351);
-            this.guess5_4.MaxLength = 0;
+            this.guess5_4.MaxLength = 1;
             this.guess5_4.Name = "guess5_4";
             this.guess5_4.Size = new System.Drawing.Size(81, 83);
             this.guess5_4.TabIndex = 24;
@@ -381,7 +382,7 @@ namespace guess_word_game
             this.guess5_3.DetectUrls = false;
             this.guess5_3.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess5_3.Location = new System.Drawing.Point(275, 351);
-            this.guess5_3.MaxLength = 0;
+            this.guess5_3.MaxLength = 1;
             this.guess5_3.Name = "guess5_3";
             this.guess5_3.Size = new System.Drawing.Size(81, 83);
             this.guess5_3.TabIndex = 23;
@@ -394,7 +395,7 @@ namespace guess_word_game
             this.guess5_2.DetectUrls = false;
             this.guess5_2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess5_2.Location = new System.Drawing.Point(188, 351);
-            this.guess5_2.MaxLength = 0;
+            this.guess5_2.MaxLength = 1;
             this.guess5_2.Name = "guess5_2";
             this.guess5_2.Size = new System.Drawing.Size(81, 83);
             this.guess5_2.TabIndex = 22;
@@ -407,7 +408,7 @@ namespace guess_word_game
             this.guess5_1.DetectUrls = false;
             this.guess5_1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess5_1.Location = new System.Drawing.Point(101, 351);
-            this.guess5_1.MaxLength = 0;
+            this.guess5_1.MaxLength = 1;
             this.guess5_1.Name = "guess5_1";
             this.guess5_1.Size = new System.Drawing.Size(81, 83);
             this.guess5_1.TabIndex = 21;
@@ -420,7 +421,7 @@ namespace guess_word_game
             this.guess5_0.DetectUrls = false;
             this.guess5_0.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess5_0.Location = new System.Drawing.Point(14, 351);
-            this.guess5_0.MaxLength = 0;
+            this.guess5_0.MaxLength = 1;
             this.guess5_0.Name = "guess5_0";
             this.guess5_0.Size = new System.Drawing.Size(81, 83);
             this.guess5_0.TabIndex = 20;
@@ -433,7 +434,7 @@ namespace guess_word_game
             this.guess6_4.DetectUrls = false;
             this.guess6_4.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess6_4.Location = new System.Drawing.Point(362, 440);
-            this.guess6_4.MaxLength = 0;
+            this.guess6_4.MaxLength = 1;
             this.guess6_4.Name = "guess6_4";
             this.guess6_4.Size = new System.Drawing.Size(81, 79);
             this.guess6_4.TabIndex = 29;
@@ -446,7 +447,7 @@ namespace guess_word_game
             this.guess6_3.DetectUrls = false;
             this.guess6_3.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess6_3.Location = new System.Drawing.Point(275, 440);
-            this.guess6_3.MaxLength = 0;
+            this.guess6_3.MaxLength = 1;
             this.guess6_3.Name = "guess6_3";
             this.guess6_3.Size = new System.Drawing.Size(81, 79);
             this.guess6_3.TabIndex = 28;
@@ -459,7 +460,7 @@ namespace guess_word_game
             this.guess6_2.DetectUrls = false;
             this.guess6_2.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess6_2.Location = new System.Drawing.Point(188, 440);
-            this.guess6_2.MaxLength = 0;
+            this.guess6_2.MaxLength = 1;
             this.guess6_2.Name = "guess6_2";
             this.guess6_2.Size = new System.Drawing.Size(81, 79);
             this.guess6_2.TabIndex = 27;
@@ -472,7 +473,7 @@ namespace guess_word_game
             this.guess6_1.DetectUrls = false;
             this.guess6_1.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess6_1.Location = new System.Drawing.Point(101, 440);
-            this.guess6_1.MaxLength = 0;
+            this.guess6_1.MaxLength = 1;
             this.guess6_1.Name = "guess6_1";
             this.guess6_1.Size = new System.Drawing.Size(81, 79);
             this.guess6_1.TabIndex = 26;
@@ -485,7 +486,7 @@ namespace guess_word_game
             this.guess6_0.DetectUrls = false;
             this.guess6_0.Font = new System.Drawing.Font("Comic Sans MS", 36F, System.Drawing.FontStyle.Regular, System.Drawing.GraphicsUnit.Point, ((byte)(0)));
             this.guess6_0.Location = new System.Drawing.Point(14, 440);
-            this.guess6_0.MaxLength = 0;
+            this.guess6_0.MaxLength = 1;
             this.guess6_0.Name = "guess6_0";
             this.guess6_0.Size = new System.Drawing.Size(81, 79);
             this.guess6_0.TabIndex = 25;
@@ -507,9 +508,9 @@ namespace guess_word_game
             // 
             this.alphaA.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaA.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaA.Location = new System.Drawing.Point(72, 556);
+            this.alphaA.Location = new System.Drawing.Point(40, 532);
             this.alphaA.Name = "alphaA";
-            this.alphaA.Size = new System.Drawing.Size(26, 28);
+            this.alphaA.Size = new System.Drawing.Size(36, 36);
             this.alphaA.TabIndex = 31;
             this.alphaA.Text = "A";
             this.alphaA.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -518,9 +519,9 @@ namespace guess_word_game
             // 
             this.alphaB.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaB.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaB.Location = new System.Drawing.Point(104, 556);
+            this.alphaB.Location = new System.Drawing.Point(78, 532);
             this.alphaB.Name = "alphaB";
-            this.alphaB.Size = new System.Drawing.Size(26, 28);
+            this.alphaB.Size = new System.Drawing.Size(36, 36);
             this.alphaB.TabIndex = 32;
             this.alphaB.Text = "B";
             this.alphaB.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -529,9 +530,9 @@ namespace guess_word_game
             // 
             this.alphaD.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaD.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaD.Location = new System.Drawing.Point(168, 556);
+            this.alphaD.Location = new System.Drawing.Point(154, 532);
             this.alphaD.Name = "alphaD";
-            this.alphaD.Size = new System.Drawing.Size(26, 28);
+            this.alphaD.Size = new System.Drawing.Size(36, 36);
             this.alphaD.TabIndex = 34;
             this.alphaD.Text = "D";
             this.alphaD.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -540,9 +541,9 @@ namespace guess_word_game
             // 
             this.alphaC.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaC.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaC.Location = new System.Drawing.Point(136, 556);
+            this.alphaC.Location = new System.Drawing.Point(116, 532);
             this.alphaC.Name = "alphaC";
-            this.alphaC.Size = new System.Drawing.Size(26, 28);
+            this.alphaC.Size = new System.Drawing.Size(36, 36);
             this.alphaC.TabIndex = 33;
             this.alphaC.Text = "C";
             this.alphaC.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -551,9 +552,9 @@ namespace guess_word_game
             // 
             this.alphaF.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaF.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaF.Location = new System.Drawing.Point(232, 556);
+            this.alphaF.Location = new System.Drawing.Point(230, 532);
             this.alphaF.Name = "alphaF";
-            this.alphaF.Size = new System.Drawing.Size(26, 28);
+            this.alphaF.Size = new System.Drawing.Size(36, 36);
             this.alphaF.TabIndex = 36;
             this.alphaF.Text = "F";
             this.alphaF.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -562,9 +563,9 @@ namespace guess_word_game
             // 
             this.alphaE.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaE.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaE.Location = new System.Drawing.Point(200, 556);
+            this.alphaE.Location = new System.Drawing.Point(192, 532);
             this.alphaE.Name = "alphaE";
-            this.alphaE.Size = new System.Drawing.Size(26, 28);
+            this.alphaE.Size = new System.Drawing.Size(36, 36);
             this.alphaE.TabIndex = 35;
             this.alphaE.Text = "E";
             this.alphaE.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -573,9 +574,9 @@ namespace guess_word_game
             // 
             this.alphaL.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaL.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaL.Location = new System.Drawing.Point(104, 593);
+            this.alphaL.Location = new System.Drawing.Point(78, 577);
             this.alphaL.Name = "alphaL";
-            this.alphaL.Size = new System.Drawing.Size(26, 28);
+            this.alphaL.Size = new System.Drawing.Size(36, 36);
             this.alphaL.TabIndex = 42;
             this.alphaL.Text = "L";
             this.alphaL.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -584,9 +585,9 @@ namespace guess_word_game
             // 
             this.alphaK.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaK.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaK.Location = new System.Drawing.Point(72, 593);
+            this.alphaK.Location = new System.Drawing.Point(40, 577);
             this.alphaK.Name = "alphaK";
-            this.alphaK.Size = new System.Drawing.Size(26, 28);
+            this.alphaK.Size = new System.Drawing.Size(36, 36);
             this.alphaK.TabIndex = 41;
             this.alphaK.Text = "K";
             this.alphaK.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -595,9 +596,9 @@ namespace guess_word_game
             // 
             this.alphaJ.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaJ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaJ.Location = new System.Drawing.Point(360, 556);
+            this.alphaJ.Location = new System.Drawing.Point(382, 532);
             this.alphaJ.Name = "alphaJ";
-            this.alphaJ.Size = new System.Drawing.Size(26, 28);
+            this.alphaJ.Size = new System.Drawing.Size(36, 36);
             this.alphaJ.TabIndex = 40;
             this.alphaJ.Text = "J";
             this.alphaJ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -606,9 +607,9 @@ namespace guess_word_game
             // 
             this.alphaI.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaI.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaI.Location = new System.Drawing.Point(328, 556);
+            this.alphaI.Location = new System.Drawing.Point(344, 532);
             this.alphaI.Name = "alphaI";
-            this.alphaI.Size = new System.Drawing.Size(26, 28);
+            this.alphaI.Size = new System.Drawing.Size(36, 36);
             this.alphaI.TabIndex = 39;
             this.alphaI.Text = "I";
             this.alphaI.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -617,9 +618,9 @@ namespace guess_word_game
             // 
             this.alphaH.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaH.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaH.Location = new System.Drawing.Point(296, 556);
+            this.alphaH.Location = new System.Drawing.Point(306, 532);
             this.alphaH.Name = "alphaH";
-            this.alphaH.Size = new System.Drawing.Size(26, 28);
+            this.alphaH.Size = new System.Drawing.Size(36, 36);
             this.alphaH.TabIndex = 38;
             this.alphaH.Text = "H";
             this.alphaH.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -628,9 +629,9 @@ namespace guess_word_game
             // 
             this.alphaG.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaG.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaG.Location = new System.Drawing.Point(264, 556);
+            this.alphaG.Location = new System.Drawing.Point(268, 532);
             this.alphaG.Name = "alphaG";
-            this.alphaG.Size = new System.Drawing.Size(26, 28);
+            this.alphaG.Size = new System.Drawing.Size(36, 36);
             this.alphaG.TabIndex = 37;
             this.alphaG.Text = "G";
             this.alphaG.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -639,9 +640,9 @@ namespace guess_word_game
             // 
             this.alphaT.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaT.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaT.Location = new System.Drawing.Point(360, 593);
+            this.alphaT.Location = new System.Drawing.Point(382, 577);
             this.alphaT.Name = "alphaT";
-            this.alphaT.Size = new System.Drawing.Size(26, 28);
+            this.alphaT.Size = new System.Drawing.Size(36, 36);
             this.alphaT.TabIndex = 50;
             this.alphaT.Text = "T";
             this.alphaT.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -650,9 +651,9 @@ namespace guess_word_game
             // 
             this.alphaS.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaS.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaS.Location = new System.Drawing.Point(328, 593);
+            this.alphaS.Location = new System.Drawing.Point(344, 577);
             this.alphaS.Name = "alphaS";
-            this.alphaS.Size = new System.Drawing.Size(26, 28);
+            this.alphaS.Size = new System.Drawing.Size(36, 36);
             this.alphaS.TabIndex = 49;
             this.alphaS.Text = "S";
             this.alphaS.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -661,9 +662,9 @@ namespace guess_word_game
             // 
             this.alphaR.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaR.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaR.Location = new System.Drawing.Point(296, 593);
+            this.alphaR.Location = new System.Drawing.Point(306, 577);
             this.alphaR.Name = "alphaR";
-            this.alphaR.Size = new System.Drawing.Size(26, 28);
+            this.alphaR.Size = new System.Drawing.Size(36, 36);
             this.alphaR.TabIndex = 48;
             this.alphaR.Text = "R";
             this.alphaR.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -672,9 +673,9 @@ namespace guess_word_game
             // 
             this.alphaQ.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaQ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaQ.Location = new System.Drawing.Point(264, 593);
+            this.alphaQ.Location = new System.Drawing.Point(268, 577);
             this.alphaQ.Name = "alphaQ";
-            this.alphaQ.Size = new System.Drawing.Size(26, 28);
+            this.alphaQ.Size = new System.Drawing.Size(36, 36);
             this.alphaQ.TabIndex = 47;
             this.alphaQ.Text = "Q";
             this.alphaQ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -683,9 +684,9 @@ namespace guess_word_game
             // 
             this.alphaP.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaP.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaP.Location = new System.Drawing.Point(232, 593);
+            this.alphaP.Location = new System.Drawing.Point(230, 577);
             this.alphaP.Name = "alphaP";
-            this.alphaP.Size = new System.Drawing.Size(26, 28);
+            this.alphaP.Size = new System.Drawing.Size(36, 36);
             this.alphaP.TabIndex = 46;
             this.alphaP.Text = "P";
             this.alphaP.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -694,9 +695,9 @@ namespace guess_word_game
             // 
             this.alphaO.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaO.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaO.Location = new System.Drawing.Point(200, 593);
+            this.alphaO.Location = new System.Drawing.Point(192, 577);
             this.alphaO.Name = "alphaO";
-            this.alphaO.Size = new System.Drawing.Size(26, 28);
+            this.alphaO.Size = new System.Drawing.Size(36, 36);
             this.alphaO.TabIndex = 45;
             this.alphaO.Text = "O";
             this.alphaO.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -705,9 +706,9 @@ namespace guess_word_game
             // 
             this.alphaN.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaN.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaN.Location = new System.Drawing.Point(168, 593);
+            this.alphaN.Location = new System.Drawing.Point(154, 577);
             this.alphaN.Name = "alphaN";
-            this.alphaN.Size = new System.Drawing.Size(26, 28);
+            this.alphaN.Size = new System.Drawing.Size(36, 36);
             this.alphaN.TabIndex = 44;
             this.alphaN.Text = "N";
             this.alphaN.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -716,9 +717,9 @@ namespace guess_word_game
             // 
             this.alphaM.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaM.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaM.Location = new System.Drawing.Point(136, 593);
+            this.alphaM.Location = new System.Drawing.Point(116, 577);
             this.alphaM.Name = "alphaM";
-            this.alphaM.Size = new System.Drawing.Size(26, 28);
+            this.alphaM.Size = new System.Drawing.Size(36, 36);
             this.alphaM.TabIndex = 43;
             this.alphaM.Text = "M";
             this.alphaM.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -727,9 +728,9 @@ namespace guess_word_game
             // 
             this.alphaZ.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaZ.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaZ.Location = new System.Drawing.Point(296, 631);
+            this.alphaZ.Location = new System.Drawing.Point(317, 624);
             this.alphaZ.Name = "alphaZ";
-            this.alphaZ.Size = new System.Drawing.Size(26, 28);
+            this.alphaZ.Size = new System.Drawing.Size(36, 36);
             this.alphaZ.TabIndex = 56;
             this.alphaZ.Text = "Z";
             this.alphaZ.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -738,9 +739,9 @@ namespace guess_word_game
             // 
             this.alphaY.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaY.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaY.Location = new System.Drawing.Point(264, 631);
+            this.alphaY.Location = new System.Drawing.Point(274, 624);
             this.alphaY.Name = "alphaY";
-            this.alphaY.Size = new System.Drawing.Size(26, 28);
+            this.alphaY.Size = new System.Drawing.Size(36, 36);
             this.alphaY.TabIndex = 55;
             this.alphaY.Text = "Y";
             this.alphaY.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -749,9 +750,9 @@ namespace guess_word_game
             // 
             this.alphaX.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaX.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaX.Location = new System.Drawing.Point(232, 631);
+            this.alphaX.Location = new System.Drawing.Point(231, 624);
             this.alphaX.Name = "alphaX";
-            this.alphaX.Size = new System.Drawing.Size(26, 28);
+            this.alphaX.Size = new System.Drawing.Size(36, 36);
             this.alphaX.TabIndex = 54;
             this.alphaX.Text = "X";
             this.alphaX.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -760,9 +761,9 @@ namespace guess_word_game
             // 
             this.alphaW.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaW.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaW.Location = new System.Drawing.Point(200, 631);
+            this.alphaW.Location = new System.Drawing.Point(188, 624);
             this.alphaW.Name = "alphaW";
-            this.alphaW.Size = new System.Drawing.Size(26, 28);
+            this.alphaW.Size = new System.Drawing.Size(36, 36);
             this.alphaW.TabIndex = 53;
             this.alphaW.Text = "W";
             this.alphaW.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -771,9 +772,9 @@ namespace guess_word_game
             // 
             this.alphaV.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaV.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaV.Location = new System.Drawing.Point(168, 631);
+            this.alphaV.Location = new System.Drawing.Point(145, 624);
             this.alphaV.Name = "alphaV";
-            this.alphaV.Size = new System.Drawing.Size(26, 28);
+            this.alphaV.Size = new System.Drawing.Size(36, 36);
             this.alphaV.TabIndex = 52;
             this.alphaV.Text = "V";
             this.alphaV.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -782,9 +783,9 @@ namespace guess_word_game
             // 
             this.alphaU.Anchor = System.Windows.Forms.AnchorStyles.None;
             this.alphaU.BorderStyle = System.Windows.Forms.BorderStyle.FixedSingle;
-            this.alphaU.Location = new System.Drawing.Point(136, 631);
+            this.alphaU.Location = new System.Drawing.Point(102, 624);
             this.alphaU.Name = "alphaU";
-            this.alphaU.Size = new System.Drawing.Size(26, 28);
+            this.alphaU.Size = new System.Drawing.Size(36, 36);
             this.alphaU.TabIndex = 51;
             this.alphaU.Text = "U";
             this.alphaU.TextAlign = System.Drawing.ContentAlignment.MiddleCenter;
@@ -851,6 +852,9 @@ namespace guess_word_game
             this.Controls.Add(this.guess1_2);
             this.Controls.Add(this.guess1_1);
             this.Controls.Add(this.guess1_0);
+            this.FormBorderStyle = System.Windows.Forms.FormBorderStyle.FixedSingle;
+            this.Icon = ((System.Drawing.Icon)(resources.GetObject("$this.Icon")));
+            this.MaximizeBox = false;
             this.Name = "Form1";
             this.Text = "Guess the Word";
             this.ResumeLayout(false);
@@ -922,6 +926,7 @@ namespace guess_word_game
         private RichTextBox[] guess4_letter_list;
         private RichTextBox[] guess5_letter_list;
         private RichTextBox[] guess6_letter_list;
+        private Label[] alphabet;
     }
 }
 
