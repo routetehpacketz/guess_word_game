@@ -247,7 +247,7 @@ namespace guess_word_game
             }
             */
         }
-        private void button1_Click(object sender, EventArgs e)
+        private void Button1_Click(object sender, EventArgs e)
         {
             if (guess_count == 0)
             {
