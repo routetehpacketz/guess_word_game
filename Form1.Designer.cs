@@ -1,10 +1,6 @@
 ﻿using System;
 using System.Collections.Generic;
-//using System.Diagnostics.Tracing;
-//using System.Linq;
-//using System.Security.Cryptography;
 using System.Windows.Forms;
-//using System.Windows.Forms.VisualStyles;
 
 namespace guess_word_game
 {

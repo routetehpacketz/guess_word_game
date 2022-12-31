@@ -1,13 +1,6 @@
 ﻿using System;
-using System.Collections.Generic;
-using System.ComponentModel;
-using System.Data;
 using System.Drawing;
-using System.Drawing.Text;
 using System.Linq;
-using System.Security.Cryptography.X509Certificates;
-using System.Text;
-using System.Threading.Tasks;
 using System.Windows.Forms;
 
 namespace guess_word_game
@@ -255,7 +248,7 @@ namespace guess_word_game
                 if (guess_string.Length < 5)
                 {
                     MessageBox.Show("You need to fill out all of the boxes!", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess1_letter_list)
                     {
                         field.Clear();
@@ -264,7 +257,7 @@ namespace guess_word_game
                 else if (!(words_list.Contains(guess_string)))
                 {
                     MessageBox.Show("This is not a valid word.", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess1_letter_list)
                     {
                         field.Clear();
@@ -281,7 +274,7 @@ namespace guess_word_game
                 if (guess_string.Length < 5)
                 {
                     MessageBox.Show("You need to fill out all of the boxes!", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess2_letter_list)
                     {
                         field.Clear();
@@ -290,7 +283,7 @@ namespace guess_word_game
                 else if (!(words_list.Contains(guess_string)))
                 {
                     MessageBox.Show("This is not a valid word.", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess2_letter_list)
                     {
                         field.Clear();
@@ -307,7 +300,7 @@ namespace guess_word_game
                 if (guess_string.Length < 5)
                 {
                     MessageBox.Show("You need to fill out all of the boxes!", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess3_letter_list)
                     {
                         field.Clear();
@@ -316,7 +309,7 @@ namespace guess_word_game
                 else if (!(words_list.Contains(guess_string)))
                 {
                     MessageBox.Show("This is not a valid word.", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess3_letter_list)
                     {
                         field.Clear();
@@ -333,7 +326,7 @@ namespace guess_word_game
                 if (guess_string.Length < 5)
                 {
                     MessageBox.Show("You need to fill out all of the boxes!", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess4_letter_list)
                     {
                         field.Clear();
@@ -342,7 +335,7 @@ namespace guess_word_game
                 else if (!(words_list.Contains(guess_string)))
                 {
                     MessageBox.Show("This is not a valid word.", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess4_letter_list)
                     {
                         field.Clear();
@@ -359,7 +352,7 @@ namespace guess_word_game
                 if (guess_string.Length < 5)
                 {
                     MessageBox.Show("You need to fill out all of the boxes!", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess5_letter_list)
                     {
                         field.Clear();
@@ -368,7 +361,7 @@ namespace guess_word_game
                 else if (!(words_list.Contains(guess_string)))
                 {
                     MessageBox.Show("This is not a valid word.", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess5_letter_list)
                     {
                         field.Clear();
@@ -385,7 +378,7 @@ namespace guess_word_game
                 if (guess_string.Length < 5)
                 {
                     MessageBox.Show("You need to fill out all of the boxes!", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess6_letter_list)
                     {
                         field.Clear();
@@ -394,7 +387,7 @@ namespace guess_word_game
                 else if (!(words_list.Contains(guess_string)))
                 {
                     MessageBox.Show("This is not a valid word.", "Error");
-                    guess_string = null;
+                    
                     foreach (RichTextBox field in guess6_letter_list)
                     {
                         field.Clear();
