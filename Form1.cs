@@ -136,9 +136,30 @@ namespace guess_word_game
             guess6_letter_list = new RichTextBox[] { guess6_0, guess6_1, guess6_2, guess6_3, guess6_4 };
             alphabet = new Label[] { alphaA, alphaB, alphaC, alphaD,alphaE,alphaF,alphaG,alphaH,alphaI,alphaJ,alphaK, alphaL, alphaM, alphaN, alphaO, alphaP, alphaQ, alphaR, alphaS,alphaT, alphaU, alphaV, alphaW, alphaX, alphaY, alphaZ };
         }
-
+        //This function was added so exact matches (aka greens) were not counted again as loose matches ("oranges")
+        public string Check_Exact_Match(RichTextBox[] guess_letters, string guess)
+        {
+            string exact_matches = @"";
+            foreach (int i in Enumerable.Range(0, 5))
+            {
+                if (guess[i] == secret_word[i])
+                {
+                    guess_letters[i].BackColor = Color.ForestGreen;
+                    exact_matches += guess[i];
+                    foreach (Label letter in alphabet)
+                    {
+                        if (guess_letters[i].Text == letter.Text)
+                        {
+                            letter.BackColor = Color.ForestGreen;
+                        }
+                    }
+                }
+            }
+            return exact_matches;
+        }
         public int Check_Guess(int guess_count, RichTextBox[] guess_letters, RichTextBox[] guess_letters_next, string guess)
         {
+            //Check if guessed word is exact match to the secret word and end game
             if (guess == secret_word)
             {
                 guess_letters[0].BackColor = Color.ForestGreen;
@@ -160,20 +181,10 @@ namespace guess_word_game
             }
             else
             {
+                string exact_matches = Check_Exact_Match(guess_letters, guess);
                 foreach (int i in Enumerable.Range(0, 5))
                 {
-                    if (guess[i] == secret_word[i])
-                    {
-                        guess_letters[i].BackColor = Color.ForestGreen;
-                        foreach (Label letter in alphabet)
-                        {
-                            if (guess_letters[i].Text == letter.Text)
-                            {
-                                letter.BackColor = Color.ForestGreen;
-                            }
-                        }
-                    }
-                    else if (secret_word.Contains(guess[i]))
+                    if (!(exact_matches.Contains(guess[i])) && (secret_word.Contains(guess[i])))
                     {
                         guess_letters[i].BackColor = Color.Orange;
                         foreach (Label letter in alphabet)
@@ -184,7 +195,7 @@ namespace guess_word_game
                             }
                         }
                     }
-                    else
+                    else if (!(exact_matches.Contains(guess[i])) && (!(secret_word.Contains(guess[i]))))
                     {
                         guess_letters[i].BackColor = Color.Gray;
                         foreach (Label letter in alphabet)
@@ -203,7 +214,7 @@ namespace guess_word_game
                 guess_count++;
                 if (guess_count == 6)
                 {
-                    DialogResult result = MessageBox.Show($"Out of guesses! The word was {secret_word}. Play again?", ":(:(:(:(:(:(:(:(:(:(", MessageBoxButtons.YesNo);
+                    DialogResult result = MessageBox.Show($"Out of guesses! The word was {secret_word}. Play again?", ":(:(:(:(:(:(:(:(:(:(:(:(:(:(:(:(:(:(:(:(", MessageBoxButtons.YesNo);
                     if (result == DialogResult.Yes)
                     {
                         Application.Restart();
@@ -218,13 +229,13 @@ namespace guess_word_game
         }
         private void Guess_KeyPress(object sender, KeyPressEventArgs e)
         {
-            //Blank input if it is a number
+            //Blank key input if it is not a letter
             if (!(Char.IsLetter(e.KeyChar)))
             {
                 e.KeyChar = '\0';
             }
 
-            //Convert all inputs to uppercase
+            //Automatically captilize key inputs
             e.KeyChar = Char.ToUpper(e.KeyChar);
 
             //Autotab between input fields
@@ -243,7 +254,21 @@ namespace guess_word_game
                 string guess_string = guess1_0.Text + guess1_1.Text + guess1_2.Text + guess1_3.Text + guess1_4.Text;
                 if (guess_string.Length < 5)
                 {
-                    MessageBox.Show("Fill out the boxes!");
+                    MessageBox.Show("You need to fill out all of the boxes!", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess1_letter_list)
+                    {
+                        field.Clear();
+                    }
+                }
+                else if (!(words_list.Contains(guess_string)))
+                {
+                    MessageBox.Show("This is not a valid word.", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess1_letter_list)
+                    {
+                        field.Clear();
+                    }
                 }
                 else
                 {
@@ -255,7 +280,21 @@ namespace guess_word_game
                 string guess_string = guess2_0.Text + guess2_1.Text + guess2_2.Text + guess2_3.Text + guess2_4.Text;
                 if (guess_string.Length < 5)
                 {
-                    MessageBox.Show("Fill out the boxes!");
+                    MessageBox.Show("You need to fill out all of the boxes!", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess2_letter_list)
+                    {
+                        field.Clear();
+                    }
+                }
+                else if (!(words_list.Contains(guess_string)))
+                {
+                    MessageBox.Show("This is not a valid word.", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess2_letter_list)
+                    {
+                        field.Clear();
+                    }
                 }
                 else
                 {
@@ -267,7 +306,21 @@ namespace guess_word_game
                 string guess_string = guess3_0.Text + guess3_1.Text + guess3_2.Text + guess3_3.Text + guess3_4.Text;
                 if (guess_string.Length < 5)
                 {
-                    MessageBox.Show("Fill out the boxes!");
+                    MessageBox.Show("You need to fill out all of the boxes!", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess3_letter_list)
+                    {
+                        field.Clear();
+                    }
+                }
+                else if (!(words_list.Contains(guess_string)))
+                {
+                    MessageBox.Show("This is not a valid word.", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess3_letter_list)
+                    {
+                        field.Clear();
+                    }
                 }
                 else
                 {
@@ -279,7 +332,21 @@ namespace guess_word_game
                 string guess_string = guess4_0.Text + guess4_1.Text + guess4_2.Text + guess4_3.Text + guess4_4.Text;
                 if (guess_string.Length < 5)
                 {
-                    MessageBox.Show("Fill out the boxes!");
+                    MessageBox.Show("You need to fill out all of the boxes!", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess4_letter_list)
+                    {
+                        field.Clear();
+                    }
+                }
+                else if (!(words_list.Contains(guess_string)))
+                {
+                    MessageBox.Show("This is not a valid word.", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess4_letter_list)
+                    {
+                        field.Clear();
+                    }
                 }
                 else
                 {
@@ -291,7 +358,21 @@ namespace guess_word_game
                 string guess_string = guess5_0.Text + guess5_1.Text + guess5_2.Text + guess5_3.Text + guess5_4.Text;
                 if (guess_string.Length < 5)
                 {
-                    MessageBox.Show("Fill out the boxes!");
+                    MessageBox.Show("You need to fill out all of the boxes!", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess5_letter_list)
+                    {
+                        field.Clear();
+                    }
+                }
+                else if (!(words_list.Contains(guess_string)))
+                {
+                    MessageBox.Show("This is not a valid word.", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess5_letter_list)
+                    {
+                        field.Clear();
+                    }
                 }
                 else
                 {
@@ -303,7 +384,21 @@ namespace guess_word_game
                 string guess_string = guess6_0.Text + guess6_1.Text + guess6_2.Text + guess6_3.Text + guess6_4.Text;
                 if (guess_string.Length < 5)
                 {
-                    MessageBox.Show("Fill out the boxes!");
+                    MessageBox.Show("You need to fill out all of the boxes!", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess6_letter_list)
+                    {
+                        field.Clear();
+                    }
+                }
+                else if (!(words_list.Contains(guess_string)))
+                {
+                    MessageBox.Show("This is not a valid word.", "Error");
+                    guess_string = null;
+                    foreach (RichTextBox field in guess6_letter_list)
+                    {
+                        field.Clear();
+                    }
                 }
                 else
                 {
